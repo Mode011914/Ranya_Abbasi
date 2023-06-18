@@ -1,0 +1,59 @@
+/* All I know about Version Control */
+Concurrent Versions System:
+It was first developed in 1986 by Walter F. Tichy at Purdue University and released publicly in 1990. CVS stores information about every file in a folder structure, including the name of the file, its location in the folder structure, who last modified it, and when it was last modified. The CVS also stores information about folders, including their names and who created them. The main successor to CVS was Subversion (SVN). 
+Command Line:
+To create a new file: touch example.txt.
+To create a new folder: mkdir word-docs
+
+Unix command:
+ 
+One of these helpers is the man command. Man is short for manual, and when called against a command, it will display a detailed manual of instructions for that given command.
+You can also use the command man space ls.
+We can also use something called 
+flags in conjunction with Unix commands. 
+Flags are used to modify the behavior of a command.
+Some of the most common Unix commands:
+Ls is used to show the contents of the current working directory. The ls command can accept many different types of flags that will change what is returned in the response. For example, ls -l, 
+lists the file out, in list order, and shows the read or write permissions, owners and groups it belongs to. Ls -a, on the other hand, will list all 
+files and directories including hidden ones. The PWD or print working directory command shows 
+the full path of the current working directory. 
+The copy or cp command copies files or folders from one destination to another, and the MV, move command, moves files from one directory to another.
+Redirection:
+Standard input:
+We use less (<) than sign for user input. The cat command can be used to record user input and save it to a file.
+Standard output:
+We use greater (>) than sign. IO allows us to use redirection to control where the output goes.
+Standard error:
+You can do that by explicitly setting the number 2 before the output arrow (2>) and you can also combine it with the standard output of two greater than Ampersand 1 to print both the standard output and error if any occurs (2>&1).
+Note:
+Input:  In command input is represented by “0”. 
+Output: In command output is represented by “1”.
+Error:  In command error is represented by “2>”.
+< input, >output, 2> error.
+Grep:
+Grep stands for “global regular expression print”. And it is used for searching across the files and folders as well as the contents of the files. 
+
+
+
+
+Work Flow:
+The purpose of the work flow is to guide you and other members of your team. 
+Parts of work flow:
+Work flow is divided into 3 parts:
+1)	Modified: Adding, removing and updating any file inside the repository is considered as the modified state.
+2)	Staging: In order for Git to track a file, it needs to be put in the staged area. Once added, any modifications are tracked which offers a security blanket prior to committing the changes.
+3)	Committed: Committing a file in Git is like a save point in many ways. It will save the file, and have a snapshot of the current changes.
+Example of workflow:
+Suppose you have a workflow that contains the three stages just mentioned, as well as the remote repository, a file is added from the working directory to the staging area. From there the file is committed, and then pushed to the remote repository. From the remote repository, the file can now be fetched and checked out, or merged to a working directory.
+
+Git add:
+
+The purpose of the git add command is that I’m essentially prompting git and letting it know that I want to track this file, and that it will be included as part of my commit.
+Git Branch:
+The main branch has no indication or knowledge of any of these changes even when we push code to the main repository this is because that branch exists in isolation. Changes need to be merged back to the main branch.
+
+
+
+HEAD:
+You learned the hidden folder called dot git. That is located in each project. You know that this folder is responsible for keeping track of all changes across the project. How does it know what branch you're currently on? Let me explain. 
+It keeps a special pointer called head which is one of the files inside the dot git folder. This file refers to the current committee you are viewing. You will now learn how to identify the current committee you are working on.
